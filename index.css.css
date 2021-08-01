@@ -1,0 +1,255 @@
+/* utility classes */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ************************************  */
+/*             max-width                 */
+/* ************************************  */
+.container {
+  max-width: 1400px;
+  margin: auto auto;
+}
+/* ************************************  */
+/*              Box-Shadow               */
+/* ************************************  */
+.shadow {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ************************************  */
+/*              navbar background        */
+/* ************************************  */
+.bg-light {
+  background-color: white;
+  color: black;
+}
+
+.bg-dark {
+  background-color: black;
+  color: white;
+}
+/* ************************************  */
+/*              flex                     */
+/* ************************************  */
+
+.flex {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+
+/* ************************************  */
+/*              margin                   */
+/* ************************************  */
+/* small  */
+.m-t-small {
+  margin-top: 20px;
+}
+.m-r-small {
+  margin-right: 20px;
+}
+.m-b-small {
+  margin-bottom: 20px;
+}
+.m-l-small {
+  margin-left: 20px;
+}
+.m-tb-small {
+  margin: 20px 0px;
+}
+.m-rl-small {
+  margin: 0px 20px;
+}
+/* medium  */
+
+.m-t-medium {
+  margin-top: 30px;
+}
+.m-r-medium {
+  margin-right: 30px;
+}
+.m-b-medium {
+  margin-bottom: 30px;
+}
+.m-l-medium {
+  margin-left: 30px;
+}
+.m-tb-medium {
+  margin: 30px 0px;
+}
+.m-rl-medium {
+  margin: 0px 30px;
+}
+/* large  */
+
+.m-t-large {
+  margin-top: 50px;
+}
+.m-r-large {
+  margin-right: 50px;
+}
+.m-b-large {
+  margin-bottom: 50px;
+}
+.m-l-large {
+  margin-left: 50px;
+}
+.m-tb-large {
+  margin: 50px 0px;
+}
+.m-rl-large {
+  margin: 0px 50px;
+}
+/* ************************************  */
+/*              Padding                  */
+/* ************************************  */
+
+/* small  */
+.p-t-small {
+  padding-top: 20px;
+}
+.p-r-small {
+  padding-right: 20px;
+}
+.p-b-small {
+  padding-bottom: 20px;
+}
+.p-l-small {
+  padding-left: 20px;
+}
+.p-tb-small {
+  padding: 20px 0px;
+}
+.p-rl-small {
+  padding: 0px 20px;
+}
+/* Medium  */
+
+.p-t-medium {
+  padding-top: 30px;
+}
+.p-r-medium {
+  padding-right: 30px;
+}
+.p-b-medium {
+  padding-bottom: 30px;
+}
+.p-l-medium {
+  padding-left: 30px;
+}
+.p-tb-medium {
+  padding: 30px 0px;
+}
+.p-rl-medium {
+  padding: 0px 30px;
+}
+/* Large  */
+
+.p-t-large {
+  padding-top: 50px;
+}
+.p-r-large {
+  padding-right: 50px;
+}
+.p-b-large {
+  padding-bottom: 50px;
+}
+.p-l-large {
+  padding-left: 50px;
+}
+.p-tb-large {
+  padding: 50px 0px;
+}
+.p-rl-large {
+  padding: 0px 50px;
+}
+
+/* ************************************  */
+/*              Font-Size                */
+/* ************************************  */
+
+/* small  */
+.font-small {
+  font-size: 10px;
+}
+
+/* medium  */
+.font-medium {
+  font-size: 20px;
+}
+
+/* Large  */
+.font-large {
+  font-size: 30px;
+}
+
+/* ************************************  */
+/*             Active-class              */
+/* ************************************  */
+
+.active {
+  opacity: 1 !important;
+}
+/* ************************************  */
+/*             overflow                  */
+/* ************************************  */
+
+.overflow {
+  overflow: hidden;
+}
+/* --------------------------------------------------------------------------- */
+
+/* ---------------------------------- */
+/* navbar  */
+/* ---------------------------------- */
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+  opacity: 0.7;
+}
+ul li:hover {
+  opacity: 1;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: inherit;
+}
+.toggle {
+  display: none;
+}
+@media only screen and (min-width: 700px) {
+  #menu-icon {
+    display: none;
+    position: relative;
+  }
+  .toggle {
+    display: flex;
+    background-color: inherit !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .nav-toggle {
+    position: absolute;
+    display: block !important;
+    right: 0px;
+    top: 62px;
+    line-height: 3;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+  }
+}
